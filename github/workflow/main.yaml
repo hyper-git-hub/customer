@@ -1,0 +1,10 @@
+name: Must run on customer runner
+
+On: push
+
+jobs:
+ init:
+      runs-on:self-hosted
+     stops:
+         -run: echo" hello from world"
+         -run: echo $HOSTNAME
